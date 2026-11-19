@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติส่วนตัว - ณัฐเดช เผือกเพ็ง</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Prompt', sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.7;
+            padding: 40px 16px;
+        }
+
+        .card {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #1e293b;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #6366f1, #06b6d4);
+            padding: 40px 24px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            background: #334155;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: 600;
+            color: #fff;
+            object-fit: cover;
+        }
+
+        .header h1 { font-size: 28px; font-weight: 600; color: #fff; }
+        .header p { color: #e0f2fe; }
+
+        /* Sections */
+        .section { padding: 24px 32px; border-bottom: 1px solid #334155; }
+        .section:last-child { border-bottom: none; }
+
+        .section h2 {
+            font-size: 20px;
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .info-table { width: 100%; border-collapse: collapse; }
+        .info-table td { padding: 8px 0; }
+        .info-table td:first-child { width: 140px; color: #94a3b8; }
+
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag {
+            background: #334155;
+            padding: 4px 14px;
+            border-radius: 999px;
+            font-size: 14px;
+        }
+
+        ul { padding-left: 20px; }
+
+        .contact a { color: #38bdf8; text-decoration: none; }
+        .contact a:hover { text-decoration: underline; }
+
+        footer {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 13px;
+            color: #64748b;
+        }
+
+        @media (max-width: 480px) {
+            .section { padding: 20px; }
+            .info-table td:first-child { width: 110px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <!-- Header -->
+        <div class="header">
+            <!-- TODO: replace with <img class="avatar" src="profile.jpg" alt="รูปโปรไฟล์"> -->
+            <div class="avatar">กร</div>
+            <h1>ณัฐเดช เผือกเพ็ง</h1>
+            <p>ชื่อเล่น "กร" · นักศึกษาวิทยาลัยเทคนิคสมุทรปราการ</p>
+        </div>
+
+        <!-- Personal info -->
+        <div class="section">
+            <h2>👤 ข้อมูลส่วนตัว</h2>
+            <table class="info-table">
+                <tr><td>ชื่อ-นามสกุล</td><td>ณัฐเดช เผือกเพ็ง</td></tr>
+                <tr><td>ชื่อเล่น</td><td>กร</td></tr>
+                <tr><td>อายุ</td><td>19 ปี</td></tr>
+                <tr><td>วันเกิด</td><td>15 มีนาคม 2550</td></tr>
+                <tr><td>สถานศึกษา</td><td>วิทยาลัยเทคนิคสมุทรปราการ</td></tr>
+                <tr><td>ระดับชั้น / สาขา</td><td>[สทส.2]</td></tr>
+            </table>
+        </div>
+
+        <!-- About me -->
+        <div class="section">
+            <h2>💬 เกี่ยวกับฉัน</h2>
+            <p>[Love Me]</p>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2>🛠️ ทักษะ</h2>
+            <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Git / GitHub</span>
+                <span class="tag">[Radint]</span>
+            </div>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="section">
+            <h2>🎮 งานอดิเรก</h2>
+            <ul>
+                <li>[Tiktok]</li>
+                <li>[Game]</li>
+            </ul>
+        </div>
+
+        <!-- Goal -->
+        <div class="section">
+            <h2>🎯 เป้าหมาย</h2>
+            <p>[อยากสร้างธุรกิจของตัวเอง]</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="section contact">
+            <h2>📫 ติดต่อ</h2>
+            <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+            <p>GitHub: <a href="https://github.com/xbccbx0-code" target="_blank">github.com/xbccbx0-code</a></p>
+        </div>
+
+    </div>
+
+    <footer>© 2026 ณัฐเดช เผือกเพ็ง</footer>
+
+</body>
+</html>
